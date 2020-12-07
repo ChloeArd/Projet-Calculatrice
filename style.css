@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: black;
+}
+
+#calculatrice {
+    width: 480px;
+    height: 600px;
+    margin: auto;
+    background-color: gray;
+    margin-top: 70px;
+    padding-top: 50px;
+    border: 2px solid dimgrey;
+    box-shadow: 5px 5px lightgrey;
+}
+
+.input1{
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 15%;
+    font-size: 60px;
+    margin-bottom: 150px;
+}
+
+button {
+    width: 22%;
+    height: 10%;
+    font-size: 30px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.zero {
+    width: 45.5%;
+}
+
+.parentheseG, .parentheseD, .modulo, .multiplication,.soustraction, .addition, .virgule {
+    background-color: cornflowerblue;
+}
+
+.zero, .un, .deux, .trois, .quatre, .cinq, .six, .sept, .huit, .neuf {
+    background-color: lightgreen;
+}
+
+.reset {
+    background-color: red;
+}
+
+.result {
+    background-color: darkorange;
+}
+
+.parentheseG, .sept, .quatre, .un, .zero {
+    margin-left: 20px;
+}
