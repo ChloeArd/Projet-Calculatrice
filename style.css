@@ -64,3 +64,12 @@ button {
 .parentheseG, .sept, .quatre, .un, .zero {
     margin-left: 20px;
 }
+
+@media screen and (max-width: 600px) {
+    #calculatrice {
+        width: 100%;
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+}
