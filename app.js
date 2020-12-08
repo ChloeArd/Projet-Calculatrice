@@ -108,12 +108,11 @@ buttonModulo.addEventListener("click", modulo);
 
 
 
-
+let a = document.getElementsByClassName("input1");
+let b = document.getElementsByClassName("input1");
 
 // Calculer les opérations:
 function calculer () {
-    let a = document.getElementsByClassName("input1");
-    let b = document.getElementsByClassName("input1");
     switch (x) {
         case "+":
             document.getElementsByClassName("input1").value = parseFloat(a) + parseFloat(b);
@@ -131,3 +130,8 @@ function calculer () {
 
 document.getElementById("result").addEventListener("click", calculer());
 
+let buttonReset = document.getElementById("reset");
+function reset() {
+    input1.value = "";
+}
+buttonReset.addEventListener("click", reset);
