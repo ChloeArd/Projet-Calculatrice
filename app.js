@@ -81,34 +81,36 @@ buttonVirgule.addEventListener("click", entrerVirgule);
 
 //Les boutons d'opérations:
 
-let a = document.getElementsByClassName("input1").value;
-let b = document.getElementsByClassName("input1").value;
-
 let buttonPlus = document.getElementById("addition");
+let buttonMoins = document.getElementById("soustraction");
+let buttonFois = document.getElementById("multiplication");
+let buttonModulo = document.getElementById("modulo");
+
 function addition() {
-    input1.value = parseFloat(a) + parseFloat(b);
+    input1.value += "+";
 }
 buttonPlus.addEventListener("click", addition);
 
+function soustraction() {
+    input1.value += "-";
+}
+buttonMoins.addEventListener("click", soustraction);
+
+function multiplication() {
+    input1.value += "x";
+}
+buttonFois.addEventListener("click", multiplication);
+
+function modulo() {
+    input1.value += "%";
+}
+buttonModulo.addEventListener("click", modulo);
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
+// Calculer les opérations:
 function calculer () {
     let a = document.getElementsByClassName("input1");
     let b = document.getElementsByClassName("input1");
@@ -125,4 +127,7 @@ function calculer () {
         case "%":
             document.getElementsByClassName("input1").value = parseFloat(a) % parseFloat(b);
     }
-*/
+}
+
+document.getElementById("result").addEventListener("click", calculer());
+
