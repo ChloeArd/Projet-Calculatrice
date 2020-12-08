@@ -1,137 +1,85 @@
 let input1 = document.getElementById("input1")
 
 //Les boutons nombres et virgules:
-
 //Bouton 0
-let buttonZero = document.getElementById("zero");
-function entrerZero() {
+document.getElementById("zero").addEventListener("click", function entrerZero() {
     input1.value += 0;
-}
-buttonZero.addEventListener("click", entrerZero);
+});
 
 //Bouton 1
-let buttonUn = document.getElementById("un");
-function entrerUn() {
+document.getElementById("un").addEventListener("click", function entrerUn() {
     input1.value += 1;
-}
-buttonUn.addEventListener("click", entrerUn);
+});
 
 //Bouton 2
-let buttonDeux = document.getElementById("deux");
-function entrerDeux() {
+document.getElementById("deux").addEventListener("click", function entrerDeux() {
     input1.value += 2 ;
-}
-buttonDeux.addEventListener("click", entrerDeux);
+});
 
 //Bouton 3
-let buttonTrois = document.getElementById("trois");
-function entrerTrois() {
+document.getElementById("trois").addEventListener("click", function entrerTrois() {
     input1.value += 3;
-}
-buttonTrois.addEventListener("click", entrerTrois);
+});
 
 //Bouton 4
-let buttonQuatre = document.getElementById("quatre");
-function entrerQuatre() {
+document.getElementById("quatre").addEventListener("click", function entrerQuatre() {
     input1.value += 4;
-}
-buttonQuatre.addEventListener("click", entrerQuatre);
+});
 
 //Bouton 5
-let buttonCinq = document.getElementById("cinq");
-function entrerCinq() {
+document.getElementById("cinq").addEventListener("click", function entrerCinq() {
     input1.value += 5;
-}
-buttonCinq.addEventListener("click", entrerCinq);
+});
 
 //Bouton 6
-let buttonSix = document.getElementById("six");
-function entrerSix() {
+document.getElementById("six").addEventListener("click", function entrerSix() {
     input1.value += 6;
-}
-buttonSix.addEventListener("click", entrerSix);
+});
 
 //Bouton 7
-let buttonSept = document.getElementById("sept");
-function entrerSept() {
+document.getElementById("sept").addEventListener("click", function entrerSept() {
     input1.value += 7;
-}
-buttonSept.addEventListener("click", entrerSept);
+});
 
 //Bouton 8
-let buttonHuit = document.getElementById("huit");
-function entrerHuit() {
+document.getElementById("huit").addEventListener("click", function entrerHuit() {
     input1.value += 8;
-}
-buttonHuit.addEventListener("click", entrerHuit);
+});
 
 //Bouton 9
-let buttonNeuf = document.getElementById("neuf");
-function entrerNeuf() {
+document.getElementById("neuf").addEventListener("click", function entrerNeuf() {
     input1.value += 9;
-}
-buttonNeuf.addEventListener("click", entrerNeuf);
+});
 
 //Bouton virgule
-let buttonVirgule = document.getElementById("virgule");
-function entrerVirgule() {
+document.getElementById("virgule").addEventListener("click", function entrerVirgule() {
     input1.value += ".";
-}
-buttonVirgule.addEventListener("click", entrerVirgule);
+});
 
 //Les boutons d'opérations:
-
-let buttonPlus = document.getElementById("addition");
-let buttonMoins = document.getElementById("soustraction");
-let buttonFois = document.getElementById("multiplication");
-let buttonModulo = document.getElementById("modulo");
-
-function addition() {
+document.getElementById("addition").addEventListener("click", function () {
     input1.value += "+";
-}
-buttonPlus.addEventListener("click", addition);
+});
 
-function soustraction() {
+document.getElementById("soustraction").addEventListener("click", function() {
     input1.value += "-";
-}
-buttonMoins.addEventListener("click", soustraction);
+});
 
-function multiplication() {
-    input1.value += "x";
-}
-buttonFois.addEventListener("click", multiplication);
+document.getElementById("multiplication").addEventListener("click", function() {
+    input1.value += "*";
+});
 
-function modulo() {
+document.getElementById("modulo").addEventListener("click", function() {
     input1.value += "%";
-}
-buttonModulo.addEventListener("click", modulo);
+});
 
+// Bouton égal
+document.getElementById("result").addEventListener("click", function result () {
+    let resultat = input1.value;
+    input1.value = eval(resultat);
+});
 
-
-let a = document.getElementsByClassName("input1");
-let b = document.getElementsByClassName("input1");
-
-// Calculer les opérations:
-function calculer () {
-    switch (x) {
-        case "+":
-            document.getElementsByClassName("input1").value = parseFloat(a) + parseFloat(b);
-            break;
-        case "-":
-            document.getElementsByClassName("input1").value = parseFloat(a) - parseFloat(b);
-            break;
-        case "x":
-            document.getElementsByClassName("input1").value = parseFloat(a) * parseFloat(b);
-            break;
-        case "%":
-            document.getElementsByClassName("input1").value = parseFloat(a) % parseFloat(b);
-    }
-}
-
-document.getElementById("result").addEventListener("click", calculer());
-
-let buttonReset = document.getElementById("reset");
-function reset() {
+// Le bouton reset:
+document.getElementById("reset").addEventListener("click", function reset() {
     input1.value = "";
-}
-buttonReset.addEventListener("click", reset);
+});
