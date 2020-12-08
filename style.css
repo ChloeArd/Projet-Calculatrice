@@ -41,11 +41,11 @@ button {
     border-radius: 10px;
 }
 
-#zero {
+#zero, #reset, #modulo {
     width: 45.5%;
 }
 
-#parentheseG, #parentheseD, #modulo, #multiplication,#soustraction, #addition {
+#modulo, #multiplication,#soustraction, #addition {
     background-color: cornflowerblue;
 }
 
@@ -61,7 +61,7 @@ button {
     background-color: darkorange;
 }
 
-#parentheseG, #sept, #quatre, #un, #zero {
+#modulo, #sept, #quatre, #un, #zero {
     margin-left: 20px;
 }
 

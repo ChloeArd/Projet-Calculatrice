@@ -1,5 +1,7 @@
 let input1 = document.getElementById("input1")
 
+//Les boutons nombres et virgules:
+
 //Bouton 0
 let buttonZero = document.getElementById("zero");
 function entrerZero() {
@@ -76,6 +78,21 @@ function entrerVirgule() {
     input1.value += ".";
 }
 buttonVirgule.addEventListener("click", entrerVirgule);
+
+//Les boutons d'opérations:
+
+let a = document.getElementsByClassName("input1").value;
+let b = document.getElementsByClassName("input1").value;
+
+let buttonPlus = document.getElementById("addition");
+function addition() {
+    input1.value = parseFloat(a) + parseFloat(b);
+}
+buttonPlus.addEventListener("click", addition);
+
+
+
+
 
 
 
