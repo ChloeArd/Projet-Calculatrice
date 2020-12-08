@@ -10,17 +10,16 @@ html {
 
 body {
     width: 100%;
-    background-color: black;
+    background-color: gainsboro;
 }
 
 #calculatrice {
     width: 480px;
     height: 600px;
     margin: auto;
-    background-color: gray;
+    background-color: black;
     margin-top: 70px;
     padding-top: 50px;
-    border: 2px solid dimgrey;
 }
 
 #input1{
@@ -45,19 +44,19 @@ button {
 }
 
 #modulo, #multiplication,#soustraction, #addition {
-    background-color: cornflowerblue;
+    background-color: #3B3939;
 }
 
 #zero, #un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #virgule {
-    background-color: lightgreen;
+    background-color: #818181;
 }
 
 #reset {
-    background-color: red;
+    background-color: #FF2525;
 }
 
 #result {
-    background-color: darkorange;
+    background-color: #FF7C00;
 }
 
 #modulo, #sept, #quatre, #un, #zero {
@@ -72,7 +71,7 @@ button {
     }
 
     body {
-        background-color: gray;
+        background-color: black;
     }
 }
 
