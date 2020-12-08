@@ -1,80 +1,97 @@
+let input1 = document.getElementById("input1")
 
-
-
-function nombre (x) {
-    switch (x){
-        case "0":
-            document.getElementsByClassName("input1").value = "0";
-            break;
-        case "1":
-            document.getElementsByClassName("input1").value = "1";
-            break;
-        case "2":
-            document.getElementsByClassName("input1").value = "2";
-            break;
-        case "3":
-            document.getElementsByClassName("input1").value = "3";
-            break;
-        case "4":
-            document.getElementsByClassName("input1").value = "4";
-            break;
-        case "5":
-            document.getElementsByClassName("input1").value = "5";
-            break;
-        case "6":
-            document.getElementsByClassName("input1").value = "6";
-            break;
-        case "7":
-            document.getElementsByClassName("input1").value = "7";
-            break;
-        case "8":
-            document.getElementsByClassName("input1").value = "8";
-            break;
-        case "9":
-            document.getElementsByClassName("input1").value = "9";
-            break;
-        case '.':
-            document.getElementById("label").value += ".";
-            break;
-    }
+//Bouton 0
+let buttonZero = document.getElementById("zero");
+function entrerZero() {
+    input1.value += 0;
 }
+buttonZero.addEventListener("click", entrerZero);
 
-let zero = document.getElementsByClassName("zero");
-zero.addEventListener("click", nombre("0"));
+//Bouton 1
+let buttonUn = document.getElementById("un");
+function entrerUn() {
+    input1.value += 1;
+}
+buttonUn.addEventListener("click", entrerUn);
 
-let un = document.getElementsByClassName("un");
-un.addEventListener("click", nombre("1"));
+//Bouton 2
+let buttonDeux = document.getElementById("deux");
+function entrerDeux() {
+    input1.value += 2 ;
+}
+buttonDeux.addEventListener("click", entrerDeux);
 
-let deux = document.getElementsByClassName("deux");
-deux.addEventListener("click", nombre("2"));
+//Bouton 3
+let buttonTrois = document.getElementById("trois");
+function entrerTrois() {
+    input1.value += 3;
+}
+buttonTrois.addEventListener("click", entrerTrois);
 
-let trois = document.getElementsByClassName("un");
-trois.addEventListener("click", nombre("3"));
+//Bouton 4
+let buttonQuatre = document.getElementById("quatre");
+function entrerQuatre() {
+    input1.value += 4;
+}
+buttonQuatre.addEventListener("click", entrerQuatre);
 
-let quatre = document.getElementsByClassName("quatre");
-quatre.addEventListener("click", nombre("4"));
+//Bouton 5
+let buttonCinq = document.getElementById("cinq");
+function entrerCinq() {
+    input1.value += 5;
+}
+buttonCinq.addEventListener("click", entrerCinq);
 
-let cinq = document.getElementsByClassName("cinq");
-cinq.addEventListener("click", nombre("5"));
+//Bouton 6
+let buttonSix = document.getElementById("six");
+function entrerSix() {
+    input1.value += 6;
+}
+buttonSix.addEventListener("click", entrerSix);
 
-let six = document.getElementsByClassName("six");
-six.addEventListener("click", nombre("6"));
+//Bouton 7
+let buttonSept = document.getElementById("sept");
+function entrerSept() {
+    input1.value += 7;
+}
+buttonSept.addEventListener("click", entrerSept);
 
-let sept = document.getElementsByClassName("sept");
-sept.addEventListener("click", nombre("7"))
+//Bouton 8
+let buttonHuit = document.getElementById("huit");
+function entrerHuit() {
+    input1.value += 8;
+}
+buttonHuit.addEventListener("click", entrerHuit);
 
-let huit = document.getElementsByClassName("huit");
-huit.addEventListener("click", nombre("8"));
+//Bouton 9
+let buttonNeuf = document.getElementById("neuf");
+function entrerNeuf() {
+    input1.value += 9;
+}
+buttonNeuf.addEventListener("click", entrerNeuf);
 
-let neuf = document.getElementsByClassName("neuf");
-neuf.addEventListener("click", nombre("9"));
+//Bouton virgule
+let buttonVirgule = document.getElementById("virgule");
+function entrerVirgule() {
+    input1.value += ".";
+}
+buttonVirgule.addEventListener("click", entrerVirgule);
 
-let virgule = document.getElementsByClassName("virgule");
-virgule.addEventListener("click", nombre("."));
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+/**
 function calculer () {
     let a = document.getElementsByClassName("input1");
     let b = document.getElementsByClassName("input1");
@@ -91,6 +108,4 @@ function calculer () {
         case "%":
             document.getElementsByClassName("input1").value = parseFloat(a) % parseFloat(b);
     }
-}
-
-
+*/

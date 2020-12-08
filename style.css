@@ -24,7 +24,7 @@ body {
     box-shadow: 5px 5px lightgrey;
 }
 
-.input1{
+#input1{
     display: block;
     margin: auto;
     width: 80%;
@@ -41,27 +41,27 @@ button {
     border-radius: 10px;
 }
 
-.zero {
+#zero {
     width: 45.5%;
 }
 
-.parentheseG, .parentheseD, .modulo, .multiplication,.soustraction, .addition, .virgule {
+#parentheseG, #parentheseD, #modulo, #multiplication,#soustraction, #addition {
     background-color: cornflowerblue;
 }
 
-.zero, .un, .deux, .trois, .quatre, .cinq, .six, .sept, .huit, .neuf {
+#zero, #un, #deux, #trois, #quatre, #cinq, #six, #sept, #huit, #neuf, #virgule {
     background-color: lightgreen;
 }
 
-.reset {
+#reset {
     background-color: red;
 }
 
-.result {
+#result {
     background-color: darkorange;
 }
 
-.parentheseG, .sept, .quatre, .un, .zero {
+#parentheseG, #sept, #quatre, #un, #zero {
     margin-left: 20px;
 }
 
@@ -81,7 +81,7 @@ button {
         width: 18%;
     }
 
-    .zero {
+    #zero {
         width: 38%;
     }
 }
