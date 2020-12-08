@@ -2,62 +2,62 @@ let input1 = document.getElementById("input1")
 
 //Les boutons nombres et virgules:
 //Bouton 0
-document.getElementById("zero").addEventListener("click", function entrerZero() {
+document.getElementById("zero").addEventListener("click", function() {
     input1.value += 0;
 });
 
 //Bouton 1
-document.getElementById("un").addEventListener("click", function entrerUn() {
+document.getElementById("un").addEventListener("click", function() {
     input1.value += 1;
 });
 
 //Bouton 2
-document.getElementById("deux").addEventListener("click", function entrerDeux() {
+document.getElementById("deux").addEventListener("click", function() {
     input1.value += 2 ;
 });
 
 //Bouton 3
-document.getElementById("trois").addEventListener("click", function entrerTrois() {
+document.getElementById("trois").addEventListener("click", function() {
     input1.value += 3;
 });
 
 //Bouton 4
-document.getElementById("quatre").addEventListener("click", function entrerQuatre() {
+document.getElementById("quatre").addEventListener("click", function() {
     input1.value += 4;
 });
 
 //Bouton 5
-document.getElementById("cinq").addEventListener("click", function entrerCinq() {
+document.getElementById("cinq").addEventListener("click", function() {
     input1.value += 5;
 });
 
 //Bouton 6
-document.getElementById("six").addEventListener("click", function entrerSix() {
+document.getElementById("six").addEventListener("click", function() {
     input1.value += 6;
 });
 
 //Bouton 7
-document.getElementById("sept").addEventListener("click", function entrerSept() {
+document.getElementById("sept").addEventListener("click", function() {
     input1.value += 7;
 });
 
 //Bouton 8
-document.getElementById("huit").addEventListener("click", function entrerHuit() {
+document.getElementById("huit").addEventListener("click", function() {
     input1.value += 8;
 });
 
 //Bouton 9
-document.getElementById("neuf").addEventListener("click", function entrerNeuf() {
+document.getElementById("neuf").addEventListener("click", function() {
     input1.value += 9;
 });
 
 //Bouton virgule
-document.getElementById("virgule").addEventListener("click", function entrerVirgule() {
+document.getElementById("virgule").addEventListener("click", function() {
     input1.value += ".";
 });
 
 //Les boutons d'opérations:
-document.getElementById("addition").addEventListener("click", function () {
+document.getElementById("addition").addEventListener("click", function() {
     input1.value += "+";
 });
 
